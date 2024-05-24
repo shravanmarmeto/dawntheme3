@@ -20,9 +20,8 @@ public class OpenCloseApplication implements FrameworkConstants
 //		options.setBinary(chromeBinaryPath);
 		options.addArguments("--disable-notifications");
 		//System.setProperty(chromeDriverKey, chromeDriverValue);
-		WebDriver driver;
 		driver = new ChromeDriver(options);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(5));
 		driver.manage().window().maximize();
 		//driver.get(HandlingPropertyFile.getProperty("./Utilities/website.properties", "url"));
 		driver.get("https://themes.shopify.com/themes/dawn/styles/default/preview");

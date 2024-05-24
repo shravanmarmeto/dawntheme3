@@ -25,6 +25,7 @@ public class OpenCloseApplication implements FrameworkConstants
 		driver.manage().window().maximize();
 		//driver.get(HandlingPropertyFile.getProperty("./Utilities/website.properties", "url"));
 		driver.get("https://themes.shopify.com/themes/dawn/styles/default/preview");
+		//testgit
 	}
 	
 	@AfterMethod
